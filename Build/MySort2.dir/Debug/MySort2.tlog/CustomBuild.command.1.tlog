@@ -1,0 +1,10 @@
+^C:\USERS\S25380175\DESKTOP\MYSORT2\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/s25380175/Desktop/MySort2 -BC:/Users/s25380175/Desktop/MySort2/Build --check-stamp-file C:/Users/s25380175/Desktop/MySort2/Build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,10 @@
+^C:\USERS\S25380175\DESKTOP\MYSORT2\BUILD\CMAKEFILES\5B34B7AA04A8B7D8FB432652C89A9215\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/s25380175/Desktop/MySort2 -BC:/Users/s25380175/Desktop/MySort2/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/s25380175/Desktop/MySort2/Build/MySort2.slnx
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
